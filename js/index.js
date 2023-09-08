@@ -3,7 +3,6 @@ let utcTime = document.querySelector(".utcDate");
 
 let date = new Date();
 let today = date.getDay();
-const utcDate = new Date(date.toISOString());
 
 let test;
 
@@ -36,4 +35,8 @@ switch (today) {
 
 todayText.innerText = `Today is ${text}`;
 
-utcTime.innerText = `Current time: ${utcDate}`;
+let timeInMilliseconds = () => {
+   const mainTime = Date.now();
+   utcTime.innerText = mainTime;
+};
+console.log(setInterval(timeInMilliseconds, 1));
