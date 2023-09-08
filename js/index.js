@@ -39,4 +39,4 @@ let timeInMilliseconds = () => {
    const mainTime = Date.now();
    utcTime.innerText = mainTime;
 };
-console.log(setInterval(timeInMilliseconds, 1));
+setInterval(timeInMilliseconds, 1);
