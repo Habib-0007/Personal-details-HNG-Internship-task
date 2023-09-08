@@ -33,7 +33,7 @@ switch (today) {
       text = "Random day 😊";
 }
 
-todayText.innerText = `Today is ${text}`;
+todayText.innerText = `${text}`;
 
 let timeInMilliseconds = () => {
    const mainTime = Date.now();
